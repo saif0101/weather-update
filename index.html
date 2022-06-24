@@ -19,6 +19,23 @@
             width: 70px;
             height: 70px;
         }
+        .weather-status{
+            background-color: #000000;
+            opacity: .5;
+            border-radius: 10px;
+            width: 50%;
+            height: 200%;
+        }
+        .info{
+            font-weight: bolder;
+            color: #ffffff;
+            opacity: 200;
+        
+        }
+        .box{
+            margin-left: 250px ;
+            
+        }
     </style>
 </head>
 
@@ -32,13 +49,33 @@
                 </div>
             </div>
         </form>
-        <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d.png" alt="" id="condition-icon">
-            <h1 id="temp-city">Dhaka</h1>
-            <h3><span id="temp">38.06</span>&deg;C</h3>
-            <h1 class="lead" id="condition">Clouds</h1>
+
+    </div>
+<div class="container box">
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="weather-status text-black text-center d-flex justify-content-center align-items-center">
+                <div class="info">
+                    <img src="https://openweathermap.org/img/wn/02d.png" alt="" id="condition-icon">
+                <h1 id="temp-city">Dhaka</h1>
+                <h3><span id="temp">38.06</span>&deg;C</h3>
+                <h1 class="lead" id="condition">Clouds</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="weather-status text-black text-center d-flex justify-content-center align-items-center">
+             <div class="info">
+                <h5> Feels Like : <span id="feels"> 39 </span> &deg;C</h5>
+                <h5> Humidity : <span id="humidity"> 38.06 </span> %</h5>
+                <h5> Pressure : <span id="pressure"> 38.06 </span> pa</h5>
+                <h5> Wind Speed : <span id="speed"> 38.06 </span> m/s</h5>
+             </div>
+            </div>
         </div>
     </div>
+</div>
+    
 
 
     <script src="app.js"></script>
